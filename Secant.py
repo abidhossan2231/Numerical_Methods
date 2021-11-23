@@ -18,7 +18,7 @@ if __name__ == '__main__':
 # Implementing Secant Method
     for n in range(1, n):
         x3 = x2 - ((f(x2) * (x2-x1) / (f(x2)-f(x1))))
-        print('Iteration- %d: x%d = %0.6f  and  f(x%d) = %0.6f also f(x%d) = %0.6f' % (step, 2+step, x3, step, f(x1), step+1, f(x2)))
+        print('Iteration- %d: \nx%d = %0.6f  and  f(x%d) = %0.6f also f(x%d) = %0.6f' % (step, 2+step, x3, step, f(x1), step+1, f(x2)))
         x1 = x2
         x2 = x3
         step = step + 1
