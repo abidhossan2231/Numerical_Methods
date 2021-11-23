@@ -1,6 +1,8 @@
 # Defining Function
 def f(x):
     return pow(x, 2) + x - 2
+def g(x):
+    return 2 - pow(x, 2)
 
 if __name__ == '__main__':
     step = 1
@@ -16,8 +18,8 @@ if __name__ == '__main__':
 # Implementing Fixed-Point Method
     for n in range(1, n):
 
-        x1 = 2 - pow(x, 2)
-        print('Iteration- %d: x%d = %0.6f  and  f(x1) = %0.6f' % (step, step, x1, f(x1)))
+        x1 = g(x)
+        print('Iteration- %d: x%d = %0.6f ' % (step, step, x1))
         x = x1
         step = step + 1
 
