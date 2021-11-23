@@ -8,7 +8,7 @@ def h(x1, x2):
 
 if __name__ == '__main__':
     step = 1
-    print('\n\n*** JACOBI ITERATION METHOD IMPLEMENTATION ***\n')
+    print('\n\n*** GAUSS-SEIDEL METHOD IMPLEMENTATION ***\n')
 
     # Input Section
     x1 = input('Input First Number,x1: ')
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     x2 = float(x2)
     x3 = float(x3)
 
-    # Implementing Jacobi Iteration Method
+    # Implementing Gauss-Seidel Method
     for n in range(1, n):
         xx1 = f(x2, x3)
         xx2 = g(x1, x3)
